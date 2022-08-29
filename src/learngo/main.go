@@ -7,7 +7,8 @@ import (
 	// 	pointer "learngo/pointer"
 	// goarray "learngo/array"
 	// gomap "learngo/map"
-	gostruct "learngo/struct"
+	// gostruct "learngo/struct"
+	accounts "learngo/banking"
 )
 
 func main() {
@@ -18,6 +19,9 @@ func main() {
 	// fmt.Println(ifelse.CanIDrink(18))
 	// pointer.Pointers()
 	// goarray.Makearray()
-	//gomap.Makemap()
-	gostruct.Makestruct()
+	// gomap.Makemap()
+	// gostruct.Makestruct()
+	account := accounts.NewAccount("대현")
+	account.Deposit(10)
+
 }
